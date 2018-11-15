@@ -1,10 +1,15 @@
 package com.darshni.ds;
 
+import java.util.Scanner;
+
 public class ArmstrongNumber {
 
 	public static void main(String[] args) {
-		int count=0,num=153,rem,temp;
 		
+		Scanner sc=new Scanner(System.in);
+		int count=0,num,rem,temp;
+		
+		num=sc.nextInt();
 		temp=num;
 		while(num>0){
 			rem=num%10;

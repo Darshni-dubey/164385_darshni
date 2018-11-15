@@ -1,15 +1,22 @@
 package com.darshni.ds;
 
+import java.util.Scanner;
+
 public class SimpleInterest {
 
 	public static void main(String[] args) {
+		Scanner sc= new Scanner(System.in);
+		int principle,rate,time;
+		principle=sc.nextInt();
+		rate=sc.nextInt();
+		time=sc.nextInt();
 		
-		int principle =1000,rate=10,time=3,n=1;
+		
 		
        int si=(principle*rate*time)/100;
        System.out.println(si);
 		
-       int ci=principle*(1+(rate/n))^n;
+       int ci=principle*(1+(rate/time))^time;
        System.out.println(ci);
 	}
 

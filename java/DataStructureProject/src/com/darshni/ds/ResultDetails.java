@@ -1,10 +1,17 @@
 package com.darshni.ds;
 
+import java.util.Scanner;
+
 public class ResultDetails {
 
 	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
 		
-		int m1=48,m2=87,m3=95;
+		int m1,m2,m3;
+		m1=sc.nextInt();
+		m2=sc.nextInt();
+		m3=sc.nextInt();
+		
 		if(m1>60&&m2>60&&m3>60){
 			System.out.println("Passed");
 		}
